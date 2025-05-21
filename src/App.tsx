@@ -1,10 +1,16 @@
+import React, { useEffect } from 'react';
+import { getWxConfig } from './utils/wxConfig';
 import './App.css';
-import React from 'react'
+
 const App = () => {
+  useEffect(() => {
+    getWxConfig();
+  }, []);
+
   return (
-    <div className="content">
-      <h1>EMP with React</h1>
-      <p>Start building wonderful things with EMP.</p>
+    <div className="content flex-center">
+      <h1>{window.INIT_DATA?.userInfo?.name}</h1>
+      <p>Start building wonderful things with EMP</p>
     </div>
   );
 };
