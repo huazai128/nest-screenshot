@@ -981,11 +981,6 @@
     "@babel/plugin-transform-modules-commonjs" "^7.27.1"
     "@babel/plugin-transform-typescript" "^7.27.1"
 
-"@babel/runtime@^7.27.1":
-  version "7.27.1"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.27.1.tgz#9fce313d12c9a77507f264de74626e87fd0dc541"
-  integrity sha512-1x3D2xEk2fRo3PAhwQwu5UubzgiVWSXTBfWpVd2Mx2AzRqJuDJCsgaDVZ7HB5iGzDW1Hl1sWN2mFyKjmR9uAog==
-
 "@babel/template@^7.27.1", "@babel/template@^7.3.3":
   version "7.27.2"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.27.2.tgz#fa78ceed3c4e7b63ebf6cb39e5852fca45f6809d"
@@ -2326,11 +2321,12 @@
     "@types/node" "*"
 
 "@types/compression@^1":
-  version "1.7.5"
-  resolved "https://registry.yarnpkg.com/@types/compression/-/compression-1.7.5.tgz#0f80efef6eb031be57b12221c4ba6bc3577808f7"
-  integrity sha512-AAQvK5pxMpaT+nDvhHrsBhLSYG5yQdtkaJE1WYieSNY2mVFKAgmU4ks65rkZD5oqnGCFLyQpUr1CqI4DmUMyDg==
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@types/compression/-/compression-1.8.0.tgz#d082c31f71f964809d2b532cbb8deb28ca83ff80"
+  integrity sha512-g4vmPIwbTii9dX1HVioHbOolubEaf4re4vDxuzpKrzz9uI7uarBExi9begX0cXyIB85jXZ5X2A/v8rsHZxSAPw==
   dependencies:
     "@types/express" "*"
+    "@types/node" "*"
 
 "@types/connect-history-api-fallback@^1.5.4":
   version "1.5.4"
@@ -2649,9 +2645,9 @@
   integrity sha512-MEe3UeoENYVFXzoXEWsvcpg6ZvlrFNlOQ7EOsvhI3CfAXwzPfO8Qwuxd40nepsYKqyyVQnTdEfv68q91yLcKrQ==
 
 "@types/react@^18.2.30":
-  version "18.3.21"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.21.tgz#ba9bdc8833ceaf2b5edabbbabfbf9a84040df89a"
-  integrity sha512-gXLBtmlcRJeT09/sI4PxVwyrku6SaNUj/6cMubjE6T6XdY1fDmBL7r0nX0jbSZPU/Xr0KuwLLZh6aOYY5d91Xw==
+  version "18.3.22"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.22.tgz#19b77d6e4957c43070c297e638c6a1c43079e234"
+  integrity sha512-vUhG0YmQZ7kL/tmKLrD3g5zXbXXreZXB3pmROW8bg3CnLnpjkRVwUlLne7Ufa2r9yJ8+/6B73RzhAek5TBKh2Q==
   dependencies:
     "@types/prop-types" "*"
     csstype "^3.0.2"
@@ -9576,9 +9572,9 @@ walker@^1.0.8:
     makeerror "1.0.12"
 
 watchpack@^2.4.1:
-  version "2.4.3"
-  resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-2.4.3.tgz#110b3a600c525f6a39ab66cf354cf08b205c29dc"
-  integrity sha512-adBYQLivcg1jbdKEJeqScJJFvgm4qY9+3tXw+jdG6lkVeqRJEtiQmSWjmth8GKmDZuX7sYM4YFxQsf0AzMfGGw==
+  version "2.4.4"
+  resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-2.4.4.tgz#473bda72f0850453da6425081ea46fc0d7602947"
+  integrity sha512-c5EGNOiyxxV5qmTtAB7rbiXxi1ooX1pQKMLX/MIabJjRA0SJBQOjKF+KSVfHkr9U1cADPon0mRiVe/riyaiDUA==
   dependencies:
     glob-to-regexp "^0.4.1"
     graceful-fs "^4.1.2"
@@ -9945,6 +9941,6 @@ zip-stream@^6.0.1:
     readable-stream "^4.0.0"
 
 zustand@^5.0.3:
-  version "5.0.4"
-  resolved "https://registry.yarnpkg.com/zustand/-/zustand-5.0.4.tgz#33af161f1e337854ccd8b711ef9e92545d6ae53f"
-  integrity sha512-39VFTN5InDtMd28ZhjLyuTnlytDr9HfwO512Ai4I8ZABCoyAj4F1+sr7sD1jP/+p7k77Iko0Pb5NhgBFDCX0kQ==
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/zustand/-/zustand-5.0.5.tgz#3e236f6a953142d975336d179bc735d97db17e84"
+  integrity sha512-mILtRfKW9xM47hqxGIxCv12gXusoY/xTSHBYApXozR0HmQv299whhBeeAcRy+KrPPybzosvJBCOmVjq6x12fCg==

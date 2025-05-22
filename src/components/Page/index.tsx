@@ -1,38 +1,23 @@
-import React, { useEffect } from 'react';
-import Styles from './style.scss';
-import classNames from 'classnames';
-import { getWxConfig, type WxApiList } from '@src/utils/wxConfig';
-import globalStore from '@src/stores/GlobalStore';
+import React, { FC, useEffect } from 'react'
+import { Layout, LayoutProps } from 'antd'
+import classNames from 'classnames'
+import styles from './style.scss'
 
-interface PageProps {
-  children: React.ReactNode;
-  title?: string;
-  className?: string;
-  jsApiList?: WxApiList;
+export interface PageProps extends LayoutProps {
+  title: string
+  children: React.ReactNode
 }
 
-/**
- * 页面组件
- * @param {React.ReactNode} children - 页面内容
- * @param {string} title - 页面标题
- * @param {string} className - 页面类名
- * @returns {React.ReactNode} 页面组件
- *
- */
-const Page = ({ children, title, className, jsApiList }: PageProps) => {
-  // 使用globalStore().isWx获取状态
-  // zustand的useStore hook会自动订阅状态更新
-  // 当isWx状态变化时会自动触发组件重新渲染
-  const { isWx } = globalStore();
-
+const Page: FC<PageProps> = ({ title, children, className, ...props }: PageProps) => {
   useEffect(() => {
-    document.title = title || '';
-    if (isWx) {
-      getWxConfig(jsApiList);
-    }
-  }, [title, isWx, jsApiList]);
+    document.title = title || '前端监控系统'
+  }, [title])
 
-  return <div className={classNames(Styles.page, className)}>{children}</div>;
-};
+  return (
+    <Layout {...props} className={classNames(styles.pageBox, className)}>
+      {children}
+    </Layout>
+  )
+}
 
-export default Page;
+export default Page

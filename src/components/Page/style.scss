@@ -1,5 +1,13 @@
-.page {
-  width: 100%;
+.pageBox {
   height: 100%;
-  background-color: #f0f0f0;
+  padding: 24px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.pageContent {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  min-width: 760px;
 }

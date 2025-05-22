@@ -1,18 +1,6 @@
-import React, { useEffect } from 'react';
-import { getWxConfig } from './utils/wxConfig';
+import RouterComp from '@src/components/RouterComp';
 import './App.css';
 
-const App = () => {
-  useEffect(() => {
-    getWxConfig();
-  }, []);
-
-  return (
-    <div className="content flex-center">
-      <h1>{window.INIT_DATA?.userInfo?.name}</h1>
-      <p>Start building wonderful things with EMP</p>
-    </div>
-  );
-};
+const App = () => <RouterComp />;
 
 export default App;
