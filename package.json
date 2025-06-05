@@ -36,6 +36,7 @@
     "@nestjs/platform-express": "^10.0.0",
     "@typegoose/auto-increment": "^4.9.0",
     "@typegoose/typegoose": "^12.10.1",
+    "antd": "^5.25.4",
     "archiver": "^7.0.1",
     "body-parser": "^1.20.3",
     "cheerio": "^1.0.0",
@@ -60,9 +61,12 @@
     "react-router-dom": "^7.1.5",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1",
+    "satori": "^0.13.2",
+    "sharp": "^0.34.2",
     "zustand": "^5.0.3"
   },
   "devDependencies": {
+    "@babel/runtime": "^7.27.4",
     "@empjs/cli": "^3.4.1",
     "@empjs/plugin-react": "^3.2.0",
     "@nestjs/cli": "^10.0.0",

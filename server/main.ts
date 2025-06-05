@@ -24,7 +24,21 @@ async function bootstrap() {
   // - extensions 定义允许访问的静态资源文件扩展名
   app.useStaticAssets(join(__dirname, '../client'), {
     index: false,
-    extensions: ['js', 'css', 'png', 'jpg', 'jpeg', 'gif', 'svg', 'ico', 'json', 'xml', 'txt', 'md', 'pdf'],
+    extensions: [
+      'js',
+      'css',
+      'png',
+      'jpg',
+      'jpeg',
+      'gif',
+      'svg',
+      'ico',
+      'json',
+      'xml',
+      'txt',
+      'md',
+      'pdf',
+    ],
   });
 
   // 修改视图配置
