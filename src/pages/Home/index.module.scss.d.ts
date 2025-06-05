@@ -1,5 +1,5 @@
 declare const styles: {
-  readonly "home": string;
+  readonly "app": string;
 };
 export = styles;
 

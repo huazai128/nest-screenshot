@@ -1,3 +1,13 @@
+declare namespace IGlobalStore {
+  export type SideBarTheme = 'light' | 'dark';
+
+  export interface CategoryItem {
+    id: string;
+    name: string;
+    value?: any;
+  }
+}
+
 declare global {
   interface Window {
     INIT_DATA?: {
@@ -14,6 +24,8 @@ declare global {
       isProd: boolean;
       isIOS: boolean;
       isAndroid: boolean;
+      _id?: string;
+      categoryList?: Array<IGlobalStore.CategoryItem>;
     };
     wxConfig?: {
       appId: string;

@@ -1,19 +1,22 @@
 import { lazy } from 'react';
 import type { IMenu } from '@src/interfaces/router.interface';
+import { AppstoreOutlined } from '@ant-design/icons';
+
 export const asyncRouteComponents = {
   Home: lazy(() => import(/* webpackChunkName: "Home" */ '@src/pages/Home')),
+  Test: lazy(() => import(/* webpackChunkName: "Test" */ '@src/pages/Test')),
 };
 
 export type RouteCompont = keyof typeof asyncRouteComponents;
 
 export const menus: Array<IMenu<RouteCompont>> = [
-  // {
-  //   path: ':id/home',
-  //   component: 'DataVerview',
-  //   title: '总览',
-  //   icon: <AppstoreOutlined />,
-  //   key: '1', // 子集key: 1-1、1-1-1  隐藏page为11 12 递增
-  // },
+  {
+    path: ':id/home',
+    component: 'Test',
+    title: '总览',
+    icon: <AppstoreOutlined />,
+    key: '1', // 子集key: 1-1、1-1-1  隐藏page为11 12 递增
+  },
   // {
   //   path: ':id/logs',
   //   component: 'Logs',

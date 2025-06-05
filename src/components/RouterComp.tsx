@@ -61,9 +61,7 @@ export const SwitchRouter = ({ onChange }: SwitchRouterProps) => {
 
   return (
     <Layout className="site-layout">
-      <Layout className="site-content">
-        <Routes>{renderRoutes(routes)}</Routes>
-      </Layout>
+      <Routes>{renderRoutes(routes)}</Routes>
     </Layout>
   );
 };

@@ -3,7 +3,7 @@ import { Layout } from 'antd';
 import type { FC, ReactNode } from 'react';
 import type { LayoutProps } from 'antd';
 import classNames from 'classnames';
-import styles from './style.scss';
+import styles from './style.module.scss';
 
 export interface PageProps extends LayoutProps {
   title?: string;

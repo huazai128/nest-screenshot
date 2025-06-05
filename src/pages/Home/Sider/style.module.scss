@@ -1,0 +1,38 @@
+@use '../../../styles/_var' as *;
+
+.siderBox {
+  :global(.ant-layout-sider-children) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.logoBox {
+  padding: 10px 15px 10px 0;
+  font-size: 20px;
+  text-align: right;
+  cursor: pointer;
+
+  &.dark {
+    color: rgba(white, 0.65);
+  }
+}
+
+.menu {
+  flex: 1;
+}
+
+.changeTheme {
+  display: flex;
+  padding: 12px 10px;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid $border-light-color;
+  transition: all 0.3s;
+
+  &.dark {
+    color: rgba(white, 0.65);
+    background-color: $dark-color;
+    border-color: $dark-color;
+  }
+}
