@@ -27,6 +27,16 @@ interface CacheStats {
   memoryUsage: string;
 }
 
+/**
+ * 截图服务
+ * 使用satori生成截图，并使用Redis缓存
+ * 支持中文，支持分批处理大量图标
+ * 支持性能对比测试
+ * 支持清理缓存
+ * 支持获取缓存统计信息
+ * 支持获取缓存统计信息
+ * satori 只支持display:flex布局，其他都不支持，所以需要使用div模拟
+ */
 @Injectable()
 export class ScreenshotService {
   private fontCache: Map<string, Buffer> = new Map();

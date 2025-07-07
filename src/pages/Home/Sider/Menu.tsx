@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useLocation, useNavigate, useParams } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { menus, routesFlat, type RouteCompont } from '@src/routes';
 import type { IMenu } from '@src/interfaces/router.interface';
 import type { MenuProps } from 'antd';
@@ -53,7 +53,6 @@ const SiderMenu: React.FC = () => {
   const updateSelectKey = globalStore((state) => state.updateSelectKey);
 
   const location = useLocation();
-  const { id } = useParams();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -61,11 +60,10 @@ const SiderMenu: React.FC = () => {
   }, [updateSelectKey, location.pathname]);
 
   const goPage: MenuProps['onClick'] = (e) => {
-    if (id) {
-      const key = e.key;
-      const path = routesFlat.find((item) => item.key === key)?.path;
-      const url = path?.replace(':id', id);
-      url && navigate('/page/' + url);
+    const key = e.key;
+    const path = routesFlat.find((item) => item.key === key)?.path;
+    if (path) {
+      navigate('/page/' + path);
     }
   };
 
