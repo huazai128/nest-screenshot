@@ -1,5 +1,5 @@
 import Page, { type PageProps } from '.';
-import styles from './style.scss';
+import styles from './style.module.scss';
 
 const PageContent = ({ children, ...props }: PageProps) => {
   return (
